@@ -40,15 +40,12 @@ namespace CompareFiles
         }
         string AddDelString(string str, string fileString)
         {
-            if (str != fileString)
+            if (str != fileString && !ChangeString(str, fileString))
             {
-                if (!ChangeString(str, fileString))
-                {
-                    if (!str.Contains(File2.ToString()))
-                        return $"+{str}";
-                    else
-                        return $"-{str}";
-                }
+                if (!str.Contains(File2.ToString()))
+                    return $"+{str}";
+                else
+                    return $"-{str}";
             }
             return "";
         }
