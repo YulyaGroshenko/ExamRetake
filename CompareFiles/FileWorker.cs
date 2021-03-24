@@ -75,8 +75,7 @@ namespace CompareFiles
         }
         public string Compare()
         {
-            string[] output1 = new string[CheckLargeLength()];
-            string[] output2 = new string[CheckLargeLength()];
+            string[] output = new string[CheckLargeLength()];
 
             int i = 0;
             while (i < CheckLargeLength())
@@ -85,24 +84,24 @@ namespace CompareFiles
                 {
                     if (AddDelString(File2[k], File1[i]) == "")
                     {
-                        output2[i] = $"~{File2[k]}";
+                        output[i] = $"~{File2[k]}";
                         i++;
                     }
                     else
                     {
                         if (!File2[k].Contains(File1.ToString()))
                         {
-                            output2[i] = $"+{File2[k]}";
+                            output[i] = $"+{File2[k]}";
                         }
                         else if ((!File1[i].Contains(File2.ToString())))
                         {
-                            output2[i] = $"-{File1[i]}";
+                            output[i] = $"-{File1[i]}";
                         }
                     }
                 }
                 i++;
             }
-            foreach (string elem in output2)
+            foreach (string elem in output)
             {
                 Console.WriteLine(elem);
             }
