@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompareFiles", "CompareFiles\CompareFiles.csproj", "{0EB40B6F-E1AA-4FC0-A782-A0DDD326B5E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulatorCMD", "SimulatorCMD\SimulatorCMD.csproj", "{9133DEB6-932D-48EA-94B7-B347E4F53A46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimulatorCMD", "SimulatorCMD\SimulatorCMD.csproj", "{9133DEB6-932D-48EA-94B7-B347E4F53A46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gallows", "Gallows\Gallows.csproj", "{9101EF1F-C4A3-4479-84B7-089F1746390E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9133DEB6-932D-48EA-94B7-B347E4F53A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9133DEB6-932D-48EA-94B7-B347E4F53A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9133DEB6-932D-48EA-94B7-B347E4F53A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9101EF1F-C4A3-4479-84B7-089F1746390E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9101EF1F-C4A3-4479-84B7-089F1746390E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9101EF1F-C4A3-4479-84B7-089F1746390E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9101EF1F-C4A3-4479-84B7-089F1746390E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
