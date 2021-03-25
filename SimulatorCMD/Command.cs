@@ -25,20 +25,16 @@ namespace SimulatorCMD
                 }
                 else
                 {                    
-                    NewPath = new DirectoryInfo(string.Concat(Path, "\\", FolderName));
-                    Path = new DirectoryInfo(Catalog.Path);
+                    NewPath = new DirectoryInfo(string.Concat(Catalog.Path, "\\", FolderName));
+                    Catalog.Path = NewPath.ToString();
                 }
                 Drawer.WriteFiles(NewPath);
                 Drawer.WriteDir(NewPath);
             }
             else if (Cmd.Contains("new"))
                 File.Create(FolderName);
-            else
+            else if (Cmd.Contains("delete"))
                 File.Delete(FolderName);
         }
     }
-}
-//D:\ExamRetake\SimulatorCMD\bin\Debug\netcoreapp3.1
-//D:\ExamRetake\SimulatorCMD\bin\Debug
-//D:\ExamRetake\SimulatorCMD\bin\Debug\netcoreapp3.1
-//D:\ExamRetake\SimulatorCMD\bin\Debug\Folder1         ->             D:\ExamRetake\SimulatorCMD\bin\Debug\netcoreapp3.1\Folder1      
+} 
